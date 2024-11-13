@@ -10,7 +10,7 @@ import type { NetworkUserConfig } from "hardhat/types";
 import { resolve } from "path";
 import * as path from "path";
 
-import CustomProvider from "./tasks/CustomProvider";
+import CustomProvider from "./CustomProvider";
 // Adjust the import path as needed
 import "./tasks/accounts";
 import "./tasks/getEthereumAddress";

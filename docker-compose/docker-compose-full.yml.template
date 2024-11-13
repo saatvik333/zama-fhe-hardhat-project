@@ -89,7 +89,7 @@ services:
       - $PWD/network-fhe-keys:/network-fhe-keys:Z
       - ../setup.sh:/config/setup.sh:Z
     security_opt:
-      - no-new-privileges:true
+      - no-new-privileges:false
     healthcheck:
       test: 'curl -s -H "Connection: Upgrade" -H "Upgrade: websocket"  http://localhost:8546'
       interval: 5s

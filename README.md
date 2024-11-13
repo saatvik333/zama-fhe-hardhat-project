@@ -1,13 +1,24 @@
-# Sample Hardhat Project
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a Hardhat Ignition module that deploys that contract.
+# Zama FHEVM Hardhat Test
 
-Try running some of the following tasks:
+### Setup
+Copy the example environment variables file and install the dependencies:
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat ignition deploy ./ignition/modules/Lock.ts
+```bash
+cp .env.example .env
+pnpm install
+```
+
+### Run
+Start a local fhEVM docker compose that inlcudes everything needed to deploy FHE encrypted smart contracts using:
+
+```bash
+pnpm fhe:start
+```
+
+### Stop
+Stop the fhEVM docker compose:
+
+```bash
+pnpm fhe:stop
 ```
