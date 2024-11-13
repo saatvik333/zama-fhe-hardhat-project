@@ -59,7 +59,7 @@
     "clean": "rimraf ./artifacts ./cache ./coverage ./types ./coverage.json && pnpm typechain",
     "compile": "cross-env TS_NODE_TRANSPILE_ONLY=true hardhat compile",
     "postinstall": "DOTENV_CONFIG_PATH=./.env.example pnpm typechain",
-    "fhe:start": "./scripts/precompute-addresses.sh && ./scripts/rewrite-docker-compose.sh && make run-full && ./scripts/fund-test-addresses-docker.sh && ./scripts/launch-fhevm.sh",
+    "fhe:start": "./scripts/precompute-addresses.sh && ./scripts/rewrite-docker-compose.sh && make run-full && ./scripts/fund-test-addresses-docker.sh && ./launch-fhevm.sh",
     "fhe:stop": "make clean",
     "fhe:restart": "fhe:stop && fhe:start"
   },
